@@ -5,27 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+<!--bootstrap stuff-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--Custom style sheet-->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
 <body>
-    <header>
+    <header class="container-fluid"> <!--need to figure out how to do the burger collapse for mobile here, probably a tiny bit of JS-->
         <nav class="row">
-            <a href="" class="logo">
+            <a href="#" class="col logo">
+                testlogo
             </a>
             <ul>
-                <li class="nav-item">
+                <li class="col nav-item">
+                    <a href="#">test1</a>
                 </li>
-                <li class="nav-item">
+                <li class="col nav-item">
+                    <a href="#">test2</a>
                 </li>
-                <li class="nav-item">
+                <li class="col nav-item">
+                    <a href="#">test3</a>
+                </li>
+                <li class="col nav-item">
+                    <a href="#">test4</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <section>
+    <section class="container-fluid">
+        <!--Recent Articles-->
+        <div class="row">
+            <!--big, new article-->
+            <article class="col-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolor tempora vitae quaerat laboriosam blanditiis voluptates harum tempore dolores magnam quis, repellendus ipsam et aut repudiandae enim a nobis exercitationem.
+            </article>
+            <!--smaller, older articles-->
+            <article class="col-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem optio, similique explicabo iste eos labore, voluptates unde illum magni ipsum quos magnam. Fuga molestias nostrum illo explicabo! Asperiores, nostrum non!
+            </article>
+
+            <article class="col-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque assumenda maxime dolorem, blanditiis nam iure porro quae est maiores sit, labore repudiandae distinctio ullam optio officiis suscipit minima cupiditate culpa.
+            </article>
+
+            <article class="col-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magni unde pariatur eligendi quam quo placeat quasi vero consectetur a eveniet enim corrupti laudantium iusto dolore, optio repudiandae tempora aliquid.
+            </article>
+        </div>
+
+        <!--Aims-->
+        <div class="row">
+
+        </div>
+
+        <!--Timeline-->
+        <div class="row">
+
+        </div>
+
+        <!--Contact-->
+        <div class="row">
+
+        </div>
     </section>
 
-    <footer>
+    <footer class="container-fluid">
     </footer>
 </body>
 </html>
