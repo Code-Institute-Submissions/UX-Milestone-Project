@@ -47,7 +47,7 @@ Users must be able to:
 
 #### Mockup
 
-Mockup.pdf
+https://github.com/PokeyMcFork/UX-Milestone-Project/blob/master/Mockup.pdf
 
 
 ## Features
