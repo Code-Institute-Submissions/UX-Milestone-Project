@@ -7,13 +7,48 @@ This website has two primary purposes:
 - The second point, as an in-universe website it must fit the needs of the people within the setting, so it acts as a way for them to learn about this company, and as a way for the company to advertise its goods and services.
  
 ## UX
+
+#### Design process
+
+The first and foremost part of the design process for this site was to figure out the 'look' that the site should go for. After some deliberation I settled upon emulating the style of craft brewery websites, as the overall structure of buisness is somewhat similar to what I have in mind for the alchemy company.
+
+With that in mind, I took to researching the structure of various websites in this area, such as:
+
+- https://honestbrew.co.uk/
+- https://www.brewdog.com/uk/
+- https://hoptimism.co.uk/
+- https://www.craftbeer.com/
+
+From this research, I looked at the common elements between the sites' structure, along with what would be thematically appropriate.
+
+Then, I discussed with an artist friend of mine what would make an appropriate colour scheme for an alchemists' website, and settled upon
  
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+#### User stories
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
+As what amounts to a piece of interactive fiction, the site has a dual purpose, as discussed before. As such, the user stories need to reflect this and thus are to be divided into two main sections:
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+##### Ficton Centric User Stories:
+
+- Website must present a believable layout to users, in order to provide a more immersive setting.
+
+##### In-Universe User Stories:
+
+Users must be able to:
+- intuitively navigate the site using the navbar, in order to shorten the time between entering the site and finding the desired information.
+- see the site branding in order to associate the brand with the content on the site.
+- view the most recent articles in order to see summaries of the most recent news, and if desired navigate to those articles. (__*full articles would be hosted on a blog of sorts, the implementation of which falls outside of the current scope of the project, so they will be placeholders.*__)
+- read the aims in order to learn why the company does what it does, and how it does it.
+- view the timeline in order to get a fuller understanding of the company and how their history affects their ongoing operations.
+- use the contact section form in order to submit messages to the company in order to contact them with queries, complaints, complements, or stories.
+- be supplied with alternate contact information such as a location or phone address if a direct online message is inappropriate or impossible for the desired method of contact.
+- view the associated organisations that the company is part of, and navigate to their sites. (__*as those sites do not currently exist and are outside of the scope of this project, these logos will simply open into blank tabs or other placeholder pages.*__)
+- see the copyright information for the company, also located in the footer, in order to know the legal ownership of the site and be assured that the site is an official one.
+
+
+#### Mockup
+
+Mockup.pdf
+
 
 ## Features
 
