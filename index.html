@@ -7,38 +7,39 @@
     <title>Document</title>
 
 <!--bootstrap stuff-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <!--Custom style sheet-->
     <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
 <body>
-    <header class="container-fluid"> <!--need to figure out how to do the burger collapse for mobile here, probably a tiny bit of JS-->
-        <nav class="row">
-            <a href="#" class="col logo">
-                testlogo
+    <header> <!--need to figure out how to do the burger collapse for mobile here, probably a tiny bit of JS-->
+        <nav class="navbar">
+            <a href="#Top" class="navbar-logo">
+                Test
             </a>
-            <ul>
-                <li class="col nav-item">
-                    <a href="#">test1</a>
-                </li>
-                <li class="col nav-item">
-                    <a href="#">test2</a>
-                </li>
-                <li class="col nav-item">
-                    <a href="#">test3</a>
-                </li>
-                <li class="col nav-item">
-                    <a href="#">test4</a>
-                </li>
-            </ul>
+            <div class="navmenu">
+                <ul class="navmenu-list">
+                    <li class="navmenu-item">
+                        <a href="#Top">home</a>
+                    </li>
+                    <li class="navmenu-item">
+                        <a href="#Articles">articles</a>
+                    </li>
+                    <li class="navmenu-item">
+                        <a href="#About">about us</a>
+                    </li>
+                    <li class="navmenu-item">
+                        <a href="#Contact">contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
-    <section class="container-fluid">
+    <section id="Top" class="container-fluid">
         <!--Recent Articles-->
-        <div class="row">
+        <div id="Articles" class="row">
             <!--big, new article-->
             <article class="col-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolor tempora vitae quaerat laboriosam blanditiis voluptates harum tempore dolores magnam quis, repellendus ipsam et aut repudiandae enim a nobis exercitationem.

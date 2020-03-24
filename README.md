@@ -108,7 +108,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 ## Credits
 
 ### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- solution to highlighting active section of page on navbar by user Zim on StackOverflow: https://stackoverflow.com/questions/29272187/change-bootstrap-navbar-link-color-based-on-position-on-page
 
 ### Media
 - The photos used in this site were obtained from ...

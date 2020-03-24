@@ -1,0 +1,30 @@
+/*--- imports  ---*/
+
+/*--- colours  ---*/
+/* palette consists of: #34233a, #daf7b4, #fff7ef, #db8e6b, #c15b15c */
+
+/*universal selector has a null specificity, so will be overwritten by anything.*/
+
+*{
+    color:#34233a;
+    background-color:#fff7ef;
+}
+
+/*---  header  ---*/
+.navbar{
+    width:100%;
+}
+
+.navmenu-item{
+    list-style-type:none;
+}
+
+/*--- articles ---*/
+
+/*---  about   ---*/
+
+/*--- timeline ---*/
+
+/*---- contact ---*/
+
+/*---- footer ----*/
