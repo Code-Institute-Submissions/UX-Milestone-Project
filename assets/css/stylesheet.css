@@ -1,22 +1,62 @@
 /*--- imports  ---*/
 
-/*--- colours  ---*/
-/* palette consists of: #34233a, #daf7b4, #fff7ef, #db8e6b, #c15b15c */
+/* palette consists of: #34233a, #daf7b4, #fff7ef, #db8e6b, #c15b5c */
 
 /*universal selector has a null specificity, so will be overwritten by anything.*/
 
-*{
-    color:#34233a;
-    background-color:#fff7ef;
+/*--- colours  ---*/
+header{
+    background-color:#c15b5c;
+}
+
+.navmenu{
+    background-color:inherit;
+}
+
+.navmenu-item a{
+    color:#fff7ef;
+}
+
+.navmenu-item a:hover{
+    text-decoration: none;
+    color:#fff7ef;
+    background-color:#db8e6b;
 }
 
 /*---  header  ---*/
+header{
+    position:fixed;
+    z-index:2;
+}
+
 .navbar{
     width:100%;
+    padding:0;
+    margin:0;
+}
+
+.navmenu{
+    width:50%;
+    height:100%;
+    margin:0;
+}
+
+.navmenu-list{
+    display:inline-table;
+    float:right;
+    height:100%;
+    margin-bottom:0;
 }
 
 .navmenu-item{
-    list-style-type:none;
+    display:table-cell;
+    vertical-align: middle;
+    height:3rem;
+}
+
+.navmenu-item a{
+    width:100%;
+    height:3rem;
 }
 
 /*--- articles ---*/
