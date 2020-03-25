@@ -107,6 +107,8 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ## Credits
 
+- W3Schools for Javascript for mobile burger menu button. - https://www.w3schools.com/tags/tag_script.asp
+
 ### Content
 - solution to highlighting active section of page on navbar by user Zim on StackOverflow: https://stackoverflow.com/questions/29272187/change-bootstrap-navbar-link-color-based-on-position-on-page
 
