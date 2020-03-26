@@ -9,6 +9,10 @@
 
 /*--- Colours & Fonts ---*/
 
+h1,h2,h3,h4,h5{
+    font-family:'Julius Sans One', sans-serif;
+}
+
 header{
     background-color:#c15b5c;
 }
@@ -100,8 +104,101 @@ header{
     margin:auto;
 }
 
+/*--- main page---*/
+
+#Articles{
+    position:relative;
+    top:50px;
+    padding:50px 0 0 0;
+}
+
+.vertical-rule{
+    width:1px;
+    border-left: 1px solid #d6d1cc;
+    max-height:33vh;
+}
+
+.main-art-link:hover{
+    text-decoration:none;
+}
+
+.article-new{
+    float:left;
+    color:#fff7ef;
+    overflow:hidden;
+    background-image:url(../images/brewery.jpg);
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:33vh;
+}
+
+.article-new h3, .article-new p, .article-new span{
+    position:relative;
+    margin:0 0 0 12px;
+    padding:0;
+
+}
+
+.article-new span{
+    color:#e9f5d9;
+    text-decoration:none;
+}
+.article-new span:hover{
+    color:#e99771;  
+}
+
+.article-old{
+    float:left;
+    width:100%
+}
+
+.article-old span{
+    display:inline;
+}
+
+.article-image{
+    float:left;
+    overflow:hidden;
+    width:10rem;
+    height:5rem;
+    background-image:url(../images/brewery.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*--- articles ---*/
+
+/*---  about   ---*/
+
+/*--- timeline ---*/
+
+/*---- contact ---*/
+
+/*---- footer ----*/
+.shoe{
+    display:block;
+    position:absolute;
+    margin:0px;
+    bottom:0px;
+    padding:1.5rem;
+    width:100%;
+    left:0;
+}
+
+.footer-liner h5{
+    display:block;
+    font-family:'Julius Sans One', sans-serif;
+}
+
+.footer-inner .copyright-info{
+    text-align: right;
+}
+
+/*--- mobile rules ---*/
 @media(max-width:868px)
 {
+    /*header*/
     .navbar{
         height:50px;
     }
@@ -140,32 +237,8 @@ header{
         background-color:#e99771;
         width:100%;
     }
-
-}
-/*--- main page---*/
-/*--- articles ---*/
-
-/*---  about   ---*/
-
-/*--- timeline ---*/
-
-/*---- contact ---*/
-
-/*---- footer ----*/
-.shoe{
-    display:block;
-    margin:0px;
-    bottom:0px;
-    padding:1.5rem;
-    width:100%;
-    left:0;
-}
-
-.footer-liner h5{
-    display:block;
-    font-family:'Julius Sans One', sans-serif;
-}
-
-.footer-inner .copyright-info{
-    text-align: right;
+    /*articles*/
+    .vertical-rule{
+        display:none;
+    }
 }
