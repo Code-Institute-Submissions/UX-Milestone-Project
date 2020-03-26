@@ -111,9 +111,10 @@ In addition, if it is not obvious, you should also describe how to run your code
 
 ### Content
 - solution to highlighting active section of page on navbar by user Zim on StackOverflow: https://stackoverflow.com/questions/29272187/change-bootstrap-navbar-link-color-based-on-position-on-page
+- Fonts from Google Fonts
+- icons from: https://fontawesome.com/v3.2.1/icons/
 
 ### Media
-- The photos used in this site were obtained from ...
 
 ### Acknowledgements
 

@@ -1,23 +1,38 @@
 /*--- imports  ---*/
-
-/* palette consists of: #34233a, #daf7b4, #fff7ef, #db8e6b, #c15b5c */
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Raleway:500,700&display=swap');
+/* palette consists of: #34233a, #e9f5d9, #fff7ef, #db8e6b, #c15b5c */
 
 .navbar .icon-reorder{
     font-size:2rem;
     display:none;
 }
 
-/*--- Colours (mostly)  ---*/
+/*--- Colours & Fonts ---*/
+
 header{
     background-color:#c15b5c;
+}
+
+div{
+    font-family:'Raleway', sans-serif;
+    font-weight:500;
 }
 
 #navmenu{
     background-color:inherit;
 }
 
+.navbar .navbar-logo{
+    font-family:'Julius Sans One', sans-serif;
+    font-weight:bolder;
+    color:#fff7ef!important;
+    text-decoration:none;
+}
+
 .navmenu-item a div{
     color:#fff7ef;
+    background-color:#c15b5c;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .navmenu-item a:hover{
@@ -25,14 +40,32 @@ header{
 }
 
 .navmenu-item a div:hover{
-    background-color:#db8e6b;
+    background-color:#f08a5b;
+}
+
+.shoe{
+    color:#fff7ef;
+    background-color:#34233a;
+}
+
+.footer-liner{
+    color:#fff7ef;
+    background-color:#34233a;
+}
+
+.footer-liner .partner-logos{
+    color:#fff7ef;
+    background-color:#34233a;
+}
+
+.footer-liner .copyright-info{
+    color:#fff7ef;
+    background-color:#34233a;
 }
 
 /*---  Header - Navbar  ---*/
 header{
     position:fixed;
-    padding:none;
-    margin:none;
     z-index:2;
 }
 
@@ -78,10 +111,16 @@ header{
         overflow:hidden;
     }
 
+    .navbar-logo{
+        position: relative;
+    }
+
     .navmenu-list{
         background-color:#e99771;
         position:fixed;
         margin-top:1.55rem;
+        left:0;
+        padding:0;
         width:100vw;
     }
 
@@ -95,15 +134,15 @@ header{
         overflow:hidden;
         float:right;
         color:#fff7ef;
-        border-style:solid;
-        border-radius:5px;
-        border-width: 2px;
-        padding:2px 6px;
+        text-decoration:none;
     }
     .navmenu-item a div{
+        background-color:#e99771;
+        width:100%;
     }
 
 }
+/*--- main page---*/
 /*--- articles ---*/
 
 /*---  about   ---*/
@@ -113,3 +152,20 @@ header{
 /*---- contact ---*/
 
 /*---- footer ----*/
+.shoe{
+    display:block;
+    margin:0px;
+    bottom:0px;
+    padding:1.5rem;
+    width:100%;
+    left:0;
+}
+
+.footer-liner h5{
+    display:block;
+    font-family:'Julius Sans One', sans-serif;
+}
+
+.footer-inner .copyright-info{
+    text-align: right;
+}
