@@ -107,6 +107,17 @@ header{
 
 /*--- main page---*/
 
+html, body{
+    min-height:100%;
+}
+
+.title{
+    width:100%;
+    position:relative;
+    text-align:center;
+    top:-1rem;
+}
+
 #Articles{
     font-family:'Raleway', sans-serif;
     position:relative;
@@ -185,7 +196,7 @@ header{
 }
 
 .article-image1{
-    background-image:url(../images/purple-potion.jpg);
+    background-image:url(../images/potion-bottles.jpg);
 }
 .article-image2{
     background-image:url(../images/workshop-potion.jpg);
@@ -204,7 +215,23 @@ header{
 }
 
 /*--- articles ---*/
+.aims{
+    margin:0 15%;
+}
 
+.aim-title,.aim-motto{
+    text-align:center;
+    min-width:100%;
+}
+
+.goals{
+    padding:0 15vw;
+}
+
+.goal-image, .what-do{
+    width:40vh;
+    height:20vh;
+}
 /*---  about   ---*/
 
 /*--- timeline ---*/
@@ -213,8 +240,7 @@ header{
 
 /*---- footer ----*/
 .shoe{
-    display:block;
-    position:absolute;
+    position:relative;
     margin:0px;
     bottom:0px;
     padding:1.5rem;

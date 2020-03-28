@@ -115,6 +115,11 @@ In addition, if it is not obvious, you should also describe how to run your code
 - icons from: https://fontawesome.com/v3.2.1/icons/
 
 ### Media
+- images from:
+    - https://picryl.com/media/alchemist-a617de
+    - https://en.wikipedia.org/wiki/Brewery
+    - https://www.flickr.com/photos/rockonmatt/1809279608
+    - https://www.publicdomainpictures.net/en/view-image.php?image=47413&picture=potion-bottles
 
 ### Acknowledgements
 
