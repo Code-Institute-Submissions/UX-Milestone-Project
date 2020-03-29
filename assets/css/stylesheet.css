@@ -30,6 +30,7 @@ div{
 .navbar .navbar-logo{
     font-family:'Julius Sans One', sans-serif;
     font-weight:bolder;
+    font-size:1.5rem;
     color:#fff7ef!important;
     text-decoration:none;
 }
@@ -66,6 +67,18 @@ div{
 .footer-liner .copyright-info{
     color:#fff7ef;
     background-color:#34233a;
+}
+
+.article-old span:hover{
+    color:#f08a5b;
+}
+
+.old-art-title, .old-art-para{
+    color:#e9f5d9;
+}
+
+.old-art-title:hover, .old-art-para:hover{
+    color:#e9f5d9;
 }
 
 /*---  Header - Navbar  ---*/
@@ -105,7 +118,7 @@ header{
     margin:auto;
 }
 
-/*--- main page---*/
+/*--- page ---*/
 
 html, body{
     min-height:100%;
@@ -118,11 +131,12 @@ html, body{
     top:-1rem;
 }
 
+/*--- articles ---*/
 #Articles{
     font-family:'Raleway', sans-serif;
     position:relative;
     top:50px;
-    padding:50px 0 0 0;
+    padding:50px 5vw;
 }
 
 .vertical-rule{
@@ -134,17 +148,12 @@ html, body{
 
 .main-art-link:hover{
     text-decoration:none;
+    width:100%;
 }
 
 .article-new{
-    position:relative;
-    color:#fff7ef;
-    overflow:hidden;
     background-image:url(../images/brewery.jpg);
     background-position: center;
-    width:100%;
-    height:33vh;
-    margin:0 0 0 0;
 }
 
 .article-new div{
@@ -153,18 +162,10 @@ html, body{
     bottom:0;
 }
 
-.article-new div h3, .article-new div p, .article-new div span{
+.article-new div h3, .article-new div p{
     position:relative;
     margin:0 0 0 0;
     padding:0;
-}
-
-.article-new div span{
-    color:#e9f5d9;
-    text-decoration:none;
-}
-.article-new div span:hover{
-    color:#e99771;  
 }
 
 .article-old{
@@ -173,38 +174,26 @@ html, body{
     margin-bottom:0.7vh;
 }
 
-.article-old span{
-    display:inline;
-}
-
-.article-old span a h4, .article-old span p{
-    padding-left:11rem;
-}
-
-.article-old span a h4{
-    color:#34233a;
-    font-size:1.2rem;
-}
-
-.article-old span a:hover{
-    text-decoration:none;
-}
-
-.article-old span p{
-    font-size:0.8rem;
-    resize: none;
-}
-
 .article-image1{
     background-image:url(../images/potion-bottles.jpg);
+    background-size:cover;
+    background-position: center;
 }
 .article-image2{
     background-image:url(../images/workshop-potion.jpg);
+    background-size:cover;
+    background-position: center;
 }
 .article-image3{
     background-image:url(../images/Alulu_Beer_Receipt.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.article-old a{
+    text-decoration: none;
 }
 
+/*
 .article-image1,.article-image2,.article-image3{
     float:left;
     overflow:hidden;
@@ -213,8 +202,13 @@ html, body{
     background-size:cover;
     background-position: center;
 }
+*/
+/*--- about ---*/
 
-/*--- articles ---*/
+#About{
+    padding:50px 5vw;
+}
+
 .aims{
     margin:0 15%;
 }
@@ -224,14 +218,6 @@ html, body{
     min-width:100%;
 }
 
-.goals{
-    padding:0 15vw;
-}
-
-.goal-image, .what-do{
-    width:40vh;
-    height:20vh;
-}
 /*---  about   ---*/
 
 /*--- timeline ---*/
@@ -258,7 +244,7 @@ html, body{
 }
 
 /*--- mobile rules ---*/
-@media(max-width:868px)
+@media(max-width:1024px)
 {
     /*header*/
     .navbar{
