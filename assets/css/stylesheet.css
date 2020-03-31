@@ -131,6 +131,10 @@ html, body{
     top:-1rem;
 }
 
+hr{
+    max-width: 30%;
+}
+
 /*--- articles ---*/
 #Articles{
     font-family:'Raleway', sans-serif;
@@ -218,9 +222,24 @@ html, body{
     min-width:100%;
 }
 
-/*---  about   ---*/
-
 /*--- timeline ---*/
+.timeline-dot{
+    position:absolute;
+    width:1vw;
+    height:1vw;
+    border:1px solid;
+    border-radius:50%;
+    overflow: hidden;
+    background-color:#d6d1cc
+}
+
+.tl-img-1,.tl-img-2,.tl-img-3,.tl-img-4{
+    background-image:url(../images/alchemists.jpg);
+}
+
+.timeline-item-left img, .timeline-item-right img{
+    background-position:center;
+}
 
 /*---- contact ---*/
 
