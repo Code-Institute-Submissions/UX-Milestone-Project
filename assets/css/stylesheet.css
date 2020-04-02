@@ -81,6 +81,11 @@ div{
     color:#e9f5d9;
 }
 
+.article-new div:hover{
+    color:#f08a5b;
+}
+
+
 /*---  Header - Navbar  ---*/
 header{
     position:fixed;
@@ -167,6 +172,7 @@ hr{
 }
 
 .article-new div h3, .article-new div p{
+    color:#e9f5d9;
     position:relative;
     margin:0 0 0 0;
     padding:0;

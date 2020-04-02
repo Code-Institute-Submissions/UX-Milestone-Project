@@ -32,6 +32,9 @@
                         <a href="#About"><div>About Us</div></a>
                     </li>
                     <li class="navmenu-item">
+                        <a href="#Timeline"><div>History</div></a>
+                    </li>
+                    <li class="navmenu-item">
                         <a href="#Contact"><div>Contact</div></a>
                     </li>
                 </ul>
@@ -104,7 +107,7 @@
         </div>
         <hr/>
         <!--Timeline-->
-        <div class="container">
+        <div id="Timeline" class="container">
             <div class="row justify-content-center timeline-item-right">
                 <img class="tl-img-1 order-first  col-sm-5" src="#" alt="">
                 <div class="vertical-rule"></div>
@@ -149,8 +152,11 @@
         <hr/>
         <!--Contact-->
         <div id="Contact" class="row">
-            <form action="">
-            
+            <form action="" method="POST">
+                <input type="text" name="Full Name" id="Name">
+                <input type="email" name="Email" id="Email">
+                <input type="text" name="Message" id="Message">
+                <input type="button" value="Submit">
             </form>
         </div>
     </section>
