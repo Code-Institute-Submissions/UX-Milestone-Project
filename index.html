@@ -44,61 +44,97 @@
                 </a>
         </nav>
     </header>
-
     <section class="container-fluid">
+    <div class="row justify-content-center">
+        <div id="Landing-Splash" class="carousel slide col-sm-11" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="Landing-Splash" data-slide-to="0" class="active"></li>
+                <li data-target="Landing-Splash" data-slide-to="1"></li>
+                <li data-target="Landing-Splash" data-slide-to="2"></li>
+                <li data-target="Landing-Splash" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/splash-images/brown-mountain.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/splash-images/spring.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/splash-images/neuschwanstein.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/splash-images/dungeon.jpg" alt="">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#Landing-Splash" role="button" data-slide="prev">
+
+            </a>
+            <a class="carousel-control-next" href="#Landing-Splash" role="button" data-slide="next">
+
+            </a>
+        </div>
+    </div>
         <!--Recent Articles-->
         <div id="Articles" class="row no-gutters justify-content-center">
             <h2 class="title">Recent Articles</h2>
             <!--big, new article-->
-            <article class="article-new  col-md-12 col-lg-5">
-                <a class="main-art-link" href="#" target="_blank">
-                    <div>
-                        <h3>A Tour Of Our New Workshop</h3>
-                        <p>We take a deep dive on our brand new alchemy workshop in Spire, opening later this month.</p>
-                        Read More
-                    </div>
-                </a>
-            </article>
+            <a class="col-md-12 col-lg-5" href="#" target="_blank">
+                <article class="article-new">
+                        <div>
+                            <h3>A Tour Of Our New Workshop</h3>
+                            <p>We take a deep dive on our brand new alchemy workshop in Spire, opening later this month.</p>
+                            Read More
+                        </div>
+                </article>
+            </a>
+            
             <div class="vertical-rule">
             </div>
             <!--smaller, older articles-->
             <div class="col-md-12 col-lg-5">
+            <a href="#" target="_blank">
                 <article class="article-old article-image1">
-                    <a href="#" target="_blank">
                         <span>
-                            <h4 class="old-art-title">Elven Home Alchemy Recipies</h4>
+                            <h5 class="old-art-title">Elven Home Alchemy Recipies</h5>
                             <p class="old-art-para">Take a peek at our easy alchemy recipes you can try at home, based on traditional formulae from elven enclaves in The Forest of Cyl.</p>
                             Read More
                         </span>
-                    </a>
                 </article>
-
+            </a>
+            <a href="#" target="_blank">
                 <article class="article-old article-image2">
-                    <a href="#" target="_blank">
                         <span>
-                            <h4  class="old-art-title">Alchemists' Convention Delayed</h4>
+                            <h5 class="old-art-title">Alchemists' Convention Delayed</h5>
                             <p class="old-art-para">Due to unforseen circumstances, the convention is delayed while relocation to a new venue is organised.</p>                    
                             Read More
                         </span>
-                    </a>
                 </article>
-
+            </a>
+            <a href="#" target="_blank">
                 <article class="article-old article-image3">
-                    <a href="#" target="_blank">
                         <span>
-                            <h4 class="old-art-title">Incredible Discoveries in the ruins of Galan</h4>
-                            <p class="old-art-para">From ancient techniques to long lost formulas: Recent excavations at the ancient site have had unexpected results.</p>
+                            <h5 class="old-art-title">New Discoveries in Ancient Alchemy</h5>
+                            <p class="old-art-para">From ancient techniques to long lost formulas: Recent excavations at Noril have had unexpected results!</p>
                             Read More
                         </span>
-                    </a>
                 </article>
+            </a>
             </div>
         </div>
         <hr/>
         <!--Aims-->
         <div id="About" class="aims row justify-content-center">
-                <h2 class="col-12 aim-title">Who Are We?</h2>
-                <h5 class="col-12 aim-motto">subtitle goes here</h5>
+                <h2 class="col-12 title">Who Are We?</h2>
+                <h5 class="col-12 title">subtitle goes here</h5>
                 <p class="goals col-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt deserunt reiciendis distinctio nisi quod ipsam modi accusantium nesciunt officiis, aliquid asperiores inventore alias tempora dolores dolor eum unde! Quisquam?</p>
                 <div class="col-12 row no-gutters justify-content-center">
                     <p class="what-do col-lg-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque dolores quo expedita totam natus error. Similique atque animi quasi tempore ea! Rerum ratione voluptates sint rem deleniti labore non quisquam!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quia. Quas, quae alias! Ipsa doloremque aspernatur voluptatum sit laudantium animi nemo corrupti laboriosam nam, praesentium voluptas facere omnis? Consectetur, officiis.</p>
@@ -108,6 +144,7 @@
         <hr/>
         <!--Timeline-->
         <div id="Timeline" class="container">
+            <h2 class="title">Our History</h2>
             <div class="row justify-content-center timeline-item-right">
                 <img class="tl-img-1 order-first  col-sm-5" src="#" alt="">
                 <div class="vertical-rule"></div>
@@ -151,13 +188,14 @@
         </div>
         <hr/>
         <!--Contact-->
-        <div id="Contact" class="row">
-            <form action="" method="POST">
-                <input type="text" name="Full Name" id="Name">
-                <input type="email" name="Email" id="Email">
-                <input type="text" name="Message" id="Message">
-                <input type="button" value="Submit">
+        <div id="Contact" class="row justify-content-center">
+            <h2 class="col-12 title">Contact Us</h2>
+            <form class="col-12" id="CntctForm" action="" method="POST">
+                <input class="row" type="text" placeholder="Full Name" name="Full Name" id="Name">
+                <input class="row" type="email" placeholder="Email" name="Email" id="Email">
+                <input class="formbutton row" type="button" value="Submit" id="#Submit">
             </form>
+            <textarea name="message" placeholder="What's on your mind?" id="Message" cols="30" rows="10" form="CntctForm"></textarea>
         </div>
     </section>
 
@@ -179,15 +217,19 @@
     </div>
     </footer>
 </body>
-
-<script>
-    function col_exp() {
-        var x = document.getElementById("navmenu");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
+<span>
+    <script>
+        function col_exp() {
+            var x = document.getElementById("navmenu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
-    }
-</script>
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</span>
 </html>

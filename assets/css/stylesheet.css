@@ -30,7 +30,7 @@ div{
 .navbar .navbar-logo{
     font-family:'Julius Sans One', sans-serif;
     font-weight:bolder;
-    font-size:1.5rem;
+    font-size:1.4rem;
     color:#fff7ef!important;
     text-decoration:none;
 }
@@ -39,6 +39,7 @@ div{
     color:#fff7ef;
     background-color:#c15b5c;
     font-family: 'Julius Sans One', sans-serif;
+    transition-duration:0.3s;
 }
 
 .navmenu-item a:hover{
@@ -69,24 +70,28 @@ div{
     background-color:#34233a;
 }
 
-.article-old span:hover{
-    color:#f08a5b;
+.article-new div h3,.old-art-title{
+    color:#fafafa;
 }
 
-.old-art-title, .old-art-para{
+.old-art-title:hover,
+.old-art-para:hover,
+.old-art-para,
+.article-new div p
+{
     color:#e9f5d9;
 }
 
-.old-art-title:hover, .old-art-para:hover{
-    color:#e9f5d9;
+.article-new div, .article-old span{
+    color:#c15b5c;
 }
 
-.article-new div:hover{
+.article-new div:hover, .article-old span:hover{
     color:#f08a5b;
 }
-
 
 /*---  Header - Navbar  ---*/
+
 header{
     position:fixed;
     z-index:2;
@@ -108,6 +113,7 @@ header{
     display:inline-table;
     float:right;
     margin-bottom:0;
+    height:50px;
 }
 
 .navmenu-item{
@@ -118,12 +124,17 @@ header{
 
 .navmenu-item a div{
     text-align: center;
+    line-height:24px;
     padding: .8rem 0;
     width: 6rem;
-    margin:auto;
 }
 
 /*--- page ---*/
+
+#Articles, #About, #Timeline, #Contact{
+    font-family:'Raleway', sans-serif;
+    padding:30px 5vw;
+}
 
 html, body{
     min-height:100%;
@@ -133,36 +144,43 @@ html, body{
     width:100%;
     position:relative;
     text-align:center;
-    top:-1rem;
+    top:-0.5rem;
+    padding-bottom:30px;
 }
 
 hr{
     max-width: 30%;
 }
 
-/*--- articles ---*/
-#Articles{
-    font-family:'Raleway', sans-serif;
-    position:relative;
-    top:50px;
-    padding:50px 5vw;
+/*--- Landing ---*/
+
+.carousel-item{
+    height:500px;
 }
+.carousel-item img{
+    object-fit: cover;
+}
+.carousel{
+    margin:30px 0;
+}
+
+/*--- articles ---*/
 
 .vertical-rule{
     width:1px;
     border-left: 1px solid #d6d1cc;
-    margin:0 20px;
-    max-height:33vh;
+    margin:0.7vh 20px 0;
 }
 
 .main-art-link:hover{
     text-decoration:none;
-    width:100%;
 }
 
 .article-new{
-    background-image:url(../images/brewery.jpg);
+    background: linear-gradient( rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/brewery.jpg);
     background-position: center;
+    width:100%;
+    height:100%;
 }
 
 .article-new div{
@@ -172,47 +190,38 @@ hr{
 }
 
 .article-new div h3, .article-new div p{
-    color:#e9f5d9;
     position:relative;
     margin:0 0 0 0;
     padding:0;
 }
 
+#Articles a, .article-old{
+    margin-top:0.7vh;
+}
+
 .article-old{
     float:left;
     width:100%;
-    margin-bottom:0.7vh;
 }
 
 .article-image1{
-    background-image:url(../images/potion-bottles.jpg);
+    background: linear-gradient( rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/potion-bottles.jpg);
     background-size:cover;
     background-position: center;
 }
 .article-image2{
-    background-image:url(../images/workshop-potion.jpg);
+    background: linear-gradient( rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/workshop-potion.jpg);
     background-size:cover;
     background-position: center;
 }
 .article-image3{
-    background-image:url(../images/Alulu_Beer_Receipt.jpg);
+    background: linear-gradient( rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/Alulu_Beer_Receipt.jpg);
     background-size:cover;
     background-position: center;
 }
 .article-old a{
     text-decoration: none;
 }
-
-/*
-.article-image1,.article-image2,.article-image3{
-    float:left;
-    overflow:hidden;
-    width:10rem;
-    height:10.58vh;
-    background-size:cover;
-    background-position: center;
-}
-*/
 /*--- about ---*/
 
 #About{
@@ -223,12 +232,8 @@ hr{
     margin:0 15%;
 }
 
-.aim-title,.aim-motto{
-    text-align:center;
-    min-width:100%;
-}
-
 /*--- timeline ---*/
+
 .timeline-dot{
     position:absolute;
     width:1vw;
@@ -249,7 +254,18 @@ hr{
 
 /*---- contact ---*/
 
+#Name, #Email, .formbutton{
+    margin:auto;
+    margin-bottom:9px;
+}
+
+#Name, #Email, #Message{
+    width:33vh;
+}
+
+
 /*---- footer ----*/
+
 .shoe{
     position:relative;
     margin:0px;
@@ -269,6 +285,7 @@ hr{
 }
 
 /*--- mobile rules ---*/
+
 @media(max-width:1024px)
 {
     /*header*/
@@ -292,6 +309,7 @@ hr{
         left:0;
         padding:0;
         width:100vw;
+        height:auto;
     }
 
     .navmenu-item{
