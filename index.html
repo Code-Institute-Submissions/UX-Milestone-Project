@@ -15,7 +15,6 @@
 </head>
 <body>
     <header class="container-fluid"> <!--need to figure out how to do the burger collapse for mobile here, probably a tiny bit of JS-->
-   
         <nav class="navbar row">
             <a href="#Top" class="navbar-logo">
                 Mercurial Tastes   <i class="icon-beaker"></i>
@@ -39,14 +38,14 @@
                     </li>
                 </ul>
             </div>
-            <a href="javascript:void(0);" class="mobile-navbutton" onclick="col_exp()">
+            <a href="javascript:void(0);" class="mobile-navbutton" onclick="navmenu_display()">
                     <i class="icon-reorder"></i>
                 </a>
         </nav>
     </header>
     <section class="container-fluid">
     <div class="row justify-content-center">
-        <div id="Landing-Splash" class="carousel slide col-sm-11" data-ride="carousel">
+        <div id="Landing-Splash" class="carousel slide col-sm-12" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="Landing-Splash" data-slide-to="0" class="active"></li>
                 <li data-target="Landing-Splash" data-slide-to="1"></li>
@@ -84,10 +83,10 @@
         </div>
     </div>
         <!--Recent Articles-->
-        <div id="Articles" class="row no-gutters justify-content-center">
+        <div id="Articles" class="row justify-content-center">
             <h2 class="title">Recent Articles</h2>
             <!--big, new article-->
-            <a class="col-md-12 col-lg-5" href="#" target="_blank">
+            <a class="col-md-12 col-lg-6" href="#" target="_blank">
                 <article class="article-new">
                         <div>
                             <h3>A Tour Of Our New Workshop</h3>
@@ -100,7 +99,7 @@
             <div class="vertical-rule">
             </div>
             <!--smaller, older articles-->
-            <div class="col-md-12 col-lg-5">
+            <div class="old-container col-md-12 col-lg-6">
             <a href="#" target="_blank">
                 <article class="article-old article-image1">
                         <span>
@@ -143,43 +142,43 @@
         </div>
         <hr/>
         <!--Timeline-->
-        <div id="Timeline" class="container">
+        <div id="Timeline" class="container-fluid">
             <h2 class="title">Our History</h2>
             <div class="row justify-content-center timeline-item-right">
-                <img class="tl-img-1 order-first  col-sm-5" src="#" alt="">
+                <img class="tl-img-1 order-first  col-sm-6" src="#" alt="">
                 <div class="vertical-rule"></div>
                 <div class="timeline-dot"></div>
-                <div class="tli order-last col-sm-5">
+                <div class="tli order-last col-sm-6">
                     <h6 class="timeline-date">test</h6>
                     <h3 class="timeline-title">test</h3>
                     <p class="timeline-content">test</p>
                 </div>
             </div>
             <div class="row justify-content-center timeline-item-left">
-                <img class="tl-img-2 order-last col-sm-5" src="#" alt="">
+                <img class="tl-img-2 order-last col-sm-6" src="#" alt="">
                 <div class="vertical-rule"></div>
                 <div class="timeline-dot"></div>
-                <div class="tli order-first col-sm-5">
+                <div class="tli order-first col-sm-6">
                     <h6 class="timeline-date">test</h6>
                     <h3 class="timeline-title">test</h3>
                     <p class="timeline-content">test</p>
                 </div>
             </div>
             <div class="row justify-content-center timeline-item-right">
-                <img class="tl-img-3 order-first col-sm-5" src="#" alt="">
+                <img class="tl-img-3 order-first col-sm-6" src="#" alt="">
                 <div class="vertical-rule"></div>
                 <div class="timeline-dot"></div>
-                <div class="tli order-last col-sm-5">
+                <div class="tli order-last col-sm-6">
                     <h6 class="timeline-date">test</h6>
                     <h3 class="timeline-title">test</h3>
                     <p class="timeline-content">test</p>
                 </div>
             </div>
             <div class="row justify-content-center timeline-item-left">
-                <img class="tl-img-4 order-last col-sm-5" src="#" alt="">
+                <img class="tl-img-4 order-last col-sm-6" src="#" alt="">
                 <div class="vertical-rule"></div>
                 <div class="timeline-dot"></div>
-                <div class="tli order-first col-sm-5">
+                <div class="tli order-first col-sm-6">
                     <h6 class="timeline-date">test</h6>
                     <h3 class="timeline-title">test</h3>
                     <p class="timeline-content">test</p>
@@ -218,18 +217,9 @@
     </footer>
 </body>
 <span>
-    <script>
-        function col_exp() {
-            var x = document.getElementById("navmenu");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/javascript/buttonscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </span>
 </html>

@@ -13,14 +13,8 @@ h1,h2,h3,h4,h5{
     font-family:'Julius Sans One', sans-serif;
 }
 
-header{
+.navbar{
     background-color:#c15b5c;
-}
-
-div{
-    font-family:'Raleway', sans-serif;
-    line-height:1.1;
-    font-weight:500;
 }
 
 #navmenu{
@@ -91,22 +85,18 @@ div{
 }
 
 /*---  Header - Navbar  ---*/
-
-header{
+.navbar{
+    width:100%;
+    padding:0 0;
+    margin:0 0 0 0;
+    height:50px;
     position:fixed;
     z-index:2;
 }
 
-.navbar{
-    width:100%;
-    padding:0 0;
-    margin:0;
-    height:50px;
-}
-
 #navmenu{
     width:50%;
-    margin:0;
+    padding:0;
 }
 
 .navmenu-list{
@@ -131,9 +121,12 @@ header{
 
 /*--- page ---*/
 
-#Articles, #About, #Timeline, #Contact{
-    font-family:'Raleway', sans-serif;
-    padding:30px 5vw;
+.container-fluid{
+    padding:0;
+}
+
+.row{
+    margin:0;
 }
 
 html, body{
@@ -161,6 +154,7 @@ hr{
     object-fit: cover;
 }
 .carousel{
+    padding:0;
     margin:30px 0;
 }
 
@@ -169,7 +163,7 @@ hr{
 .vertical-rule{
     width:1px;
     border-left: 1px solid #d6d1cc;
-    margin:0.7vh 20px 0;
+    position:absolute;
 }
 
 .main-art-link:hover{
@@ -197,6 +191,11 @@ hr{
 
 #Articles a, .article-old{
     margin-top:0.7vh;
+    padding:0;
+}
+
+.old-container{
+    padding-right:0;
 }
 
 .article-old{
@@ -223,10 +222,6 @@ hr{
     text-decoration: none;
 }
 /*--- about ---*/
-
-#About{
-    padding:50px 5vw;
-}
 
 .aims{
     margin:0 15%;
