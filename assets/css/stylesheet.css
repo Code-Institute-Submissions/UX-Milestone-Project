@@ -136,7 +136,7 @@ h1,h2,h3,h4,h5{
 }
 
 .row{
-    padding:0;
+    padding:0 30px;
     margin:0;
 }
 
