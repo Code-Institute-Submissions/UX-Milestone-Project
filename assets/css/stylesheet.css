@@ -76,18 +76,18 @@ h1,h2,h3,h4,h5{
     color:#e9f5d9;
 }
 
-.article-new div, .article-old span{
+.article-new div div, .article-old div div{
     color:#c15b5c;
 }
 
-.article-new div:hover, .article-old span:hover{
+.article-new div:hover div, .article-old div:hover div{
     color:#f08a5b;
 }
 
 /*---  Header - Navbar  ---*/
 .navbar{
     width:100%;
-    padding:0 0;
+    padding:0 30px;
     margin:0 0 0 0;
     height:50px;
     position:fixed;
@@ -121,11 +121,22 @@ h1,h2,h3,h4,h5{
 
 /*--- page ---*/
 
+#Landing-Splash,
+#Articles,
+#About,
+#Timeline,
+#Contact
+{
+    margin: 30px 0;
+    padding: 0 30px;
+}
+
 .container-fluid{
     padding:0;
 }
 
 .row{
+    padding:0;
     margin:0;
 }
 
@@ -153,17 +164,12 @@ hr{
 .carousel-item img{
     object-fit: cover;
 }
-.carousel{
-    padding:0;
-    margin:30px 0;
-}
 
 /*--- articles ---*/
 
-.vertical-rule{
-    width:1px;
-    border-left: 1px solid #d6d1cc;
-    position:absolute;
+.new-container{
+    padding:0 15px 0 0;
+    margin-bottom:10px;
 }
 
 .main-art-link:hover{
@@ -171,50 +177,56 @@ hr{
 }
 
 .article-new{
-    background: linear-gradient( rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/brewery.jpg);
+    background: linear-gradient( rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../images/brewery.jpg);
     background-position: center;
     width:100%;
     height:100%;
+    min-height:150px;
 }
 
 .article-new div{
     margin: 5px;
-    position:absolute;;
+    position:absolute;
     bottom:0;
+    padding:5px;
 }
 
-.article-new div h3, .article-new div p{
+.article-new div h3, .article-new div p, .article-new div div{
     position:relative;
     margin:0 0 0 0;
     padding:0;
 }
 
-#Articles a, .article-old{
-    margin-top:0.7vh;
-    padding:0;
-}
-
 .old-container{
     padding-right:0;
+    margin-bottom:10px;
+    max-height:400px;
+    overflow-y:auto;
 }
 
 .article-old{
     float:left;
+    height:150px;
     width:100%;
+    margin-bottom:10px;
+}
+
+.article-old div *{
+    padding:5px;
 }
 
 .article-image1{
-    background: linear-gradient( rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/potion-bottles.jpg);
+    background: linear-gradient( rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../images/potion-bottles.jpg);
     background-size:cover;
     background-position: center;
 }
 .article-image2{
-    background: linear-gradient( rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/workshop-potion.jpg);
+    background: linear-gradient( rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../images/workshop-potion.jpg);
     background-size:cover;
     background-position: center;
 }
 .article-image3{
-    background: linear-gradient( rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../images/Alulu_Beer_Receipt.jpg);
+    background: linear-gradient( rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../images/Alulu_Beer_Receipt.jpg);
     background-size:cover;
     background-position: center;
 }
@@ -247,7 +259,15 @@ hr{
     background-position:center;
 }
 
+.vertical-rule{
+    width:1px;
+    border-left: 1px solid rgba(0,0,0,.1);
+    position:absolute;
+}
 /*---- contact ---*/
+#Contact{
+    padding-bottom:33px;
+}
 
 #Name, #Email, .formbutton{
     margin:auto;
