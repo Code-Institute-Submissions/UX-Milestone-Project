@@ -65,7 +65,7 @@ h1,h2,h3,h4,h5{
 }
 
 .article-new div h3,.old-art-title{
-    color: #fafafa;
+    color: #fff7ef;
 }
 
 .old-art-title:hover,
@@ -73,7 +73,7 @@ h1,h2,h3,h4,h5{
 .old-art-para,
 .article-new div p
 {
-    color: #e9f5d9;
+    color: #fff7ef;
 }
 
 .article-new div div, .article-old div div{
@@ -86,12 +86,12 @@ h1,h2,h3,h4,h5{
 .btn{
     background-color:#34233a;
     border-color:#34233a;
-    color:#fafafa;
+    color:#fff7ef;
 }
 .btn:hover{
     background-color:#f08a5b;
     border-color:#e99771;
-    color:#fafafa;
+    color:#fff7ef;
 }
 
 /*---  Header - Navbar  ---*/
