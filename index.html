@@ -142,40 +142,40 @@
         <div id="Timeline" class="container-fluid">
             <h2 class="title">Our History</h2>
             <div class="row justify-content-center timeline-item-right">
-                <img class="tl-img-1 order-first  col-sm-6" src="#" alt="">
-                <div class="vertical-rule"></div>
+                <img class="tl-img-1 order-first  col-md-5" src="#" alt="">
+                <div class="vertical-rule col"></div>
                 <div class="timeline-dot"></div>
-                <div class="tli order-last col-sm-6">
+                <div class="tli order-last col-md-5">
                     <h6 class="timeline-date">26th Sun's Dusk, 7E 210</h6>
                     <h3 class="timeline-title">The Year Without</h3>
                     <p class="timeline-content">Following the events of the end of The WAR NAME, FOUNDER NAME plied their alchemical skills to help with the relif efforts during the disaster, saving countless lives and securing a plot of land in the Workshop District of "CITY NAME".</p>
                 </div>
             </div>
             <div class="row justify-content-center timeline-item-left">
-                <img class="tl-img-2 order-last col-sm-6" src="#" alt="">
-                <div class="vertical-rule"></div>
+                <img class="tl-img-2 order-last col-md-5" src="#" alt="">
+                <div class="vertical-rule col"></div>
                 <div class="timeline-dot"></div>
-                <div class="tli order-first col-sm-6">
+                <div class="tli order-first col-md-5">
                     <h6 class="timeline-date">14th First Seed, 8E 3</h6>
                     <h3 class="timeline-title">EVENT 2 NAME</h3>
                     <p class="timeline-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium error quos in, asperiores inventore dolor quae nostrum necessitatibus voluptatibus distinctio molestiae, iure corporis vero earum nobis quas ipsam itaque eligendi.</p>
                 </div>
             </div>
             <div class="row justify-content-center timeline-item-right">
-                <img class="tl-img-3 order-first col-sm-6" src="#" alt="">
-                <div class="vertical-rule"></div>
+                <img class="tl-img-3 order-first col-sm-5" src="#" alt="">
+                <div class="vertical-rule col"></div>
                 <div class="timeline-dot"></div>
-                <div class="tli order-last col-sm-6">
+                <div class="tli order-last col-md-5">
                     <h6 class="timeline-date">test</h6>
                     <h3 class="timeline-title">test</h3>
                     <p class="timeline-content">test</p>
                 </div>
             </div>
             <div class="row justify-content-center timeline-item-left">
-                <img class="tl-img-4 order-last col-sm-6" src="#" alt="">
-                <div class="vertical-rule"></div>
+                <img class="tl-img-4 order-last col-md-5" src="#" alt="">
+                <div class="vertical-rule col"></div>
                 <div class="timeline-dot"></div>
-                <div class="tli order-first col-sm-6">
+                <div class="tli order-first col-md-5">
                     <h6 class="timeline-date">test</h6>
                     <h3 class="timeline-title">test</h3>
                     <p class="timeline-content">test</p>
@@ -184,32 +184,58 @@
         </div>
         <hr/>
         <!--Contact-->
-        <div id="Contact" class="row justify-content-center">
-            <h2 class="col-12 title">Contact Us</h2>
-            <form class="col-12" id="CntctForm" action="" method="POST">
-                <input class="row" type="text" placeholder="Full Name" name="Full Name" id="Name">
-                <input class="row" type="email" placeholder="Email" name="Email" id="Email">
-                <input class="formbutton row" type="button" value="Submit" id="#Submit">
+        <div id="Contact" class="row">
+            <h2 class="title">Contact Us</h2>
+            <form class="row justify-content-center">
+                <div class="col-12 form-group">
+                    <div class="row justify-content-center">
+                        <label for="Name" class="sr-only">Full Name</label>
+                        <input class="form-control col-md-6" type="text" placeholder="Full Name" id="Name" required>
+                    </div>
+                    <div class="row justify-content-center">
+                        <label for="Email" class="sr-only">Email Address</label>
+                        <input class="form-control col-md-6" type="email" placeholder="Email Address" id="Email" required>
+                    </div>
+                    <div class="row justify-content-center">
+                        <label for="Message" class="sr-only">Message</label>
+                        <textarea class="form-control col-md-6" id="Message" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="row justify-content-center">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </div>
             </form>
-            <textarea name="message" placeholder="What's on your mind?" id="Message" cols="30" rows="10" form="CntctForm"></textarea>
         </div>
     </section>
 
     <footer class="shoe container-fluid">
-    <div class="footer-liner">
-        <h5>Our Partners:</h5>
-        <div class="footer-inner row justify-content-between">
-            <div class="partner-logos col-sm-4">
+    <div class="row justify-content-between footer-liner">
+            <div class="partner-logos row col-sm-6">
+            <h5>Our Partners:</h5>
                 <div>
-                    <a href="">
+                    <a class="col-1" href="#" target="_blank">
+                        <i class="icon-sun"></i>
+                    </a>
+                </div>
+                <div>
+                    <a class="col-1" href="#" target="_blank">
+                        <i class="icon-sun"></i>
+                    </a>
+                </div>
+                <div>
+                    <a class="col-1" href="#" target="_blank">
+                        <i class="icon-sun"></i>
+                    </a>
+                </div>
+                <div>
+                    <a class="col-1" href="#" target="_blank">
                         <i class="icon-sun"></i>
                     </a>
                 </div>
             </div>
-            <div class="copyright-info col-sm-3">
-                
+            <div class="copyright-info col-sm-4">
+                Copyright MT Alchemy LTD. 8E 203
             </div>
-        </div>
     </div>
     </footer>
 </body>

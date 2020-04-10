@@ -83,6 +83,16 @@ h1,h2,h3,h4,h5{
 .article-new div:hover div, .article-old div:hover div{
     color: #f08a5b;
 }
+.btn{
+    background-color:#34233a;
+    border-color:#34233a;
+    color:#fafafa;
+}
+.btn:hover{
+    background-color:#f08a5b;
+    border-color:#e99771;
+    color:#fafafa;
+}
 
 /*---  Header - Navbar  ---*/
 .navbar{
@@ -278,25 +288,38 @@ hr{
     background-position: center;
 }
 
+.timeline-item-left, .timeline-item-right{
+    padding:10px 0;
+}
+
+.tli,
+#Timeline div img{
+    max-width:48.7%;
+    flex: 0 0 48.7%;
+}
+
+.timeline-item-left{
+    text-align: right;
+}
+
 .vertical-rule{
-    width: 1px;
-    border-left: 1px solid rgba(0,0,0,.1);
-    position: absolute;
+    max-width:1px;
+    border-left: 1px solid #34233a;
+    padding:0;
+    margin:0 10px -30px 10px;
 }
 /*---- contact ---*/
 #Contact{
     padding-bottom: 33px;
 }
 
-#Name, #Email, .formbutton{
-    margin: auto;
-    margin-bottom: 9px;
+#Contact form{
+    width:100%;
 }
 
 #Name, #Email, #Message{
-    width: 33vh;
+    margin-bottom: 10px;
 }
-
 
 /*---- footer ----*/
 
@@ -314,7 +337,7 @@ hr{
     font-family: 'Julius Sans One', sans-serif;
 }
 
-.footer-inner .copyright-info{
+.copyright-info{
     text-align: right;
 }
 
@@ -367,14 +390,22 @@ hr{
     }
 
     /*articles*/
-    .vertical-rule{
-        display: none;
-    }
-
     .old-container, .new-container{
         padding:0;
         margin:0 0 10px;
         max-height:none;
     }
+    /*timeline*/
+    .vertical-rule{
+        margin:0 8px -30px 8px;
+    }
 
+}
+
+@media(max-width: 767px)
+{
+    /*timeline*/
+    .vertical-rule, .timeline-dot, #Timeline div img{
+        display:none;
+    }
 }
