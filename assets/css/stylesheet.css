@@ -204,6 +204,20 @@ hr{
     overflow-y: auto;
 }
 
+.old-art-para, 
+.old-art-title{
+    margin:0;
+    padding-bottom:0!important;
+}
+
+.old-art-para{
+    min-height:82px;
+}
+
+.article-new div div, .article-old div div{
+    padding-top:0;
+}
+
 .article-old{
     float: left;
     height: 150px;
@@ -305,8 +319,7 @@ hr{
 }
 
 /*--- mobile rules ---*/
-
-@media(max-width: 768px)
+@media(max-width: 991px)
 {
     /*header*/
     .navbar{
@@ -361,5 +374,7 @@ hr{
     .old-container, .new-container{
         padding:0;
         margin:0 0 10px;
+        max-height:none;
     }
+
 }
