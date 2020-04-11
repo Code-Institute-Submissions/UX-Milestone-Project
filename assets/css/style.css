@@ -222,12 +222,16 @@ hr{
     width: 30%;
 }
 /*--- Landing ---*/
-
 .carousel-item{
     height: 500px;
 }
 .carousel-item img{
     object-fit: cover;
+    filter: brightness(80%);
+}
+
+.carousel-caption{
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 /*--- articles ---*/
@@ -402,6 +406,10 @@ hr{
 .footer-liner h5{
     display: block;
     font-family: 'Julius Sans One', sans-serif;
+}
+
+.partner-logos div a{
+    padding:3px;
 }
 
 .copyright-info{
