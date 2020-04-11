@@ -1,4 +1,4 @@
-# Your Project's Name
+# Potions 11 - Interactive Fictional Website
 
 This website has two primary purposes:
 
@@ -52,23 +52,27 @@ https://github.com/PokeyMcFork/UX-Milestone-Project/blob/master/Mockup.pdf
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- Navbar, with navigational buttons with a soft color transition when hovered over, stays stuck to the top of the page.
+- Bootstrap carousel to display images with captions to act as landing area for page and as advertising material.
+- Articles section to provide users with worldbuilding current events, and to act as potential plot hooks for any tabletop game sessions.
+- About section provides further worldbuilding by acting as a somewhat realistic advertising spiel.
+- Timeline provides history for the Users of the tabletop setting, and further serves to enhance the potential believability of the site.
+- Contact section, which in future may further developed to be used as a interactive piece of storytelling, possibly by having a secret code as a message to submit, which could have consequences in-game.
+- Footer, with copyright thing and several external links to associated companies in-universe.
 
 ### Features Left to Implement
-- Another feature idea
+- Blog/news site where articles are directly pulled from, to allow for easier updating of news articles, and for pushing content to multiple sites via tagged content.
+- Testimonials section, to put certain messages uploaded by users, along with Game-Master/Site-Admin uploaded ones.
+- External sites for each of the associated companies, along with specific logos for each of them.
 
 ## Technologies Used
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
-
+- HTML5 https://www.w3.org/
+- CSS3 https://www.w3.org/Style/CSS/
+- Javascript https://developer.oracle.com/javascript/
+- Fontawesome https://fontawesome.com/v3.2.1/icons/
 - Project uses Bootstrap and appropriate JQuery requirements for both layout purposes and to create the carousel of images at the top of the page.
 
 
@@ -107,6 +111,7 @@ In addition, if it is not obvious, you should also describe how to run your code
 ## Credits
 
 - W3Schools for Javascript for mobile burger menu button. - https://www.w3schools.com/tags/tag_script.asp
+- W3Schools also had the information on what pseudoclasses to target to style the scrollbars.
 
 ### Content
 - solution to highlighting active section of page on navbar by user Zim on StackOverflow: https://stackoverflow.com/questions/29272187/change-bootstrap-navbar-link-color-based-on-position-on-page
@@ -125,4 +130,5 @@ In addition, if it is not obvious, you should also describe how to run your code
     - https://pixabay.com/photos/spring-tree-flowers-meadow-276014/
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- Wizards of the Coast for D&D for this whole thing in general.
+- My friends for writing this with me over the years
