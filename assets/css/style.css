@@ -313,12 +313,6 @@ hr{
     padding:10px 0;
 }
 
-.tli,
-#Timeline div img{
-    max-width:48.7%;
-    flex: 0 0 48.7%;
-}
-
 .timeline-item-left{
     text-align: right;
 }
@@ -329,6 +323,7 @@ hr{
     padding:0;
     margin:0 10px -30px 10px;
 }
+
 /*---- contact ---*/
 #Contact{
     padding-bottom: 33px;
@@ -363,6 +358,15 @@ hr{
 }
 
 /*--- mobile rules ---*/
+@media(min-width: 768px)
+{
+.tli,
+#Timeline div img{
+    max-width:48.7%;
+    flex: 0 0 48.7%;
+}
+}
+
 @media(max-width: 991px)
 {
     /*header*/
@@ -416,23 +420,57 @@ hr{
         margin:0 0 10px;
         max-height:none;
     }
+    .article-new div h3{
+        font-size:1.25rem;
+    }
+    .article-new div h3, 
+    .article-new div p, 
+    .article-new div div,
+    .old-art-title,
+    .old-art-para,
+    .article-old div div
+    {
+        position: relative;
+        margin: 0 0 0 0;
+        padding: 0;
+    }
+    .article-old div *{
+        padding:0;
+    }
+
+    .article-new div{
+        position:relative;
+    }
+    .article-old div, .article-new div{
+        padding:5px;
+        margin:0;
+    }
+    .article-old div p, .article-new div p{
+        min-height:76px;
+    }
+    .old-art-para{
+        min-height:fit-content;
+    }
     /*timeline*/
     .vertical-rule{
         margin:0 8px -30px 8px;
     }
+    
 
 }
 
 @media(max-width: 767px)
 {
+    /*articles*/
+    .old-container, .new-container{
+        font-size:smaller;
+    }
     /*timeline*/
     .vertical-rule, .timeline-dot, #Timeline div img{
         display:none;
     }
-    .old-container, .new-container{
-        font-size:smaller;
+    .tli{
+        text-align:center;
     }
-    .article-new{
-        font-size:1.25rem;
-    }
+    
 }
