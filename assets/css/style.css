@@ -409,7 +409,14 @@ hr{
 }
 
 .partner-logos div a{
+    font-size:large;
     padding:3px;
+    color:#fff7ef;
+    text-decoration:none;
+    transition-duration:0.3s;
+}
+.partner-logos div a:hover{
+    color:#e99771;
 }
 
 .copyright-info{
