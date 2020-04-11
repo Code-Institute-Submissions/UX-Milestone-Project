@@ -34,15 +34,15 @@ As what amounts to a piece of interactive fiction, the site has a dual purpose, 
 ##### In-Universe User Stories:
 
 Users must be able to:
-- intuitively navigate the site using the navbar, in order to shorten the time between entering the site and finding the desired information.
-- see the site branding in order to associate the brand with the content on the site.
-- view the most recent articles in order to see summaries of the most recent news, and if desired navigate to those articles. (__*full articles would be hosted on a blog of sorts, the implementation of which falls outside of the current scope of the project, so they will be placeholders.*__)
-- read the aims in order to learn why the company does what it does, and how it does it.
-- view the timeline in order to get a fuller understanding of the company and how their history affects their ongoing operations.
-- use the contact section form in order to submit messages to the company in order to contact them with queries, complaints, complements, or stories.
-- be supplied with alternate contact information such as a location or phone address if a direct online message is inappropriate or impossible for the desired method of contact.
-- view the associated organisations that the company is part of, and navigate to their sites. (__*as those sites do not currently exist and are outside of the scope of this project, these logos will simply open into blank tabs or other placeholder pages.*__)
-- see the copyright information for the company, also located in the footer, in order to know the legal ownership of the site and be assured that the site is an official one.
+- Intuitively navigate the site using the navbar, in order to shorten the time between entering the site and finding the desired information.
+- See the site branding in order to associate the brand with the content on the site.
+- View the most recent articles in order to see summaries of the most recent news, and if desired navigate to those articles. (__*full articles would be hosted on a blog of sorts, the implementation of which falls outside of the current scope of the project, so they will be placeholders.*__)
+- Read the aims in order to learn why the company does what it does, and how it does it.
+- View the timeline in order to get a fuller understanding of the company and how their history affects their ongoing operations.
+- Use the contact section form in order to submit messages to the company in order to contact them with queries, complaints, complements, or stories.
+- Be supplied with alternate contact information such as a location or phone address if a direct online message is inappropriate or impossible for the desired method of contact.
+- View the associated organisations that the company is part of, and navigate to their sites. (__*as those sites do not currently exist and are outside of the scope of this project, these logos will simply open into blank tabs or other placeholder pages.*__)
+- See the copyright information for the company, also located in the footer, in order to know the legal ownership of the site and be assured that the site is an official one.
 
 
 #### Mockup
@@ -82,19 +82,45 @@ Testing was primarily done during development when changes were made to each sec
 The smallest boundary for testing screen width was 300px, slightly below the chrome debug tools responsive window 'Mobile S' size. This was chosen because while most device sizes are above this, I wanted to ensure it worked at most reasonable fringe cases.
 Height was only an issue until the full content of the page was added, at which point the footer properly adhered to the bottom of the page, and was no-longer a concern.
 
+#### User Story Testing:
+- Users must be able to navigate via the navbar.
+  - This was tested by simply clicking each of the individual nabar buttons to ensure they took the viewport to the appropriate section of the site.
+  - Works correctly.
+    - During development, an issue arose wherein the titles of each section would be hidden underneath the navbar when selected. this was rectified by adding a margin to the top of each title slightly larger than the nav bar.
 
+- See the site branding at all times
+    - The site logo is on the navbar, which is stuck to the top of the viewport, ensuring this happens.
+
+- View the titles and summaries of most recent articles(__*Full articles would be hosted on a blog of sorts, the implementation of which falls outside of the current scope of the project, so they will be placeholders.*__)
+    - As stated in the comment, these articles are not currently intended to lead off site.
+    - However: the links are functional in that they do open new tabs and can easily be clicked on, so a simple change of the href would be all it would require.
+    - Also: the older articles section is now able to scroll, ensuring that the overall article section maintains it's size.
+
+- Read the Aims to Learn more about the company
+    - This section was reworked slightly to better fit the worldbuilding I was aiming for, so it more acts as a 'what' rather than 'why' of the company, it is viewable however so it works great.
+
+- View the timeline in order to get a fuller understanding of the company and how their history affects their ongoing operations.
+    - Timeline works very well at all tested resolutions, though does get a little hard to read at 4k.
+
+- Use the contact section form in order to submit messages to the company in order to contact them with queries, complaints, complements, or stories.
+    - The form exists, though does not currently send the messages anywhere. I ran out of time during the implemetation of the site so was unable to create a dummy link to send the data to.
+
+- The phone or other methods of contact were scrapped during development, as they did not fit the flow of the site nor make any sense narratively, given the setting's lack of phones.
+
+- View the associated organisations that the company is part of, and navigate to their sites. (__*As those sites do not currently exist and are outside of the scope of this project, these logos will simply open into blank tabs or other placeholder pages.*__)
+    - The icons used in this section are merely placeholders, however they do correctly link to new tabs, needing only a href change to be correct, once the proper sites are made in future.
+
+- See the copyright information for the company, also located in the footer, in order to know the legal ownership of the site and be assured that the site is an official one.
+    - Copyright is visible and fictional.
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+Deployment proved surprisingly easy, All that was nessicary was activating the github pages version of the site via the usual method, that is to say:
+   - Navigating to the repository
+   - Scrolling to the Github Pages section
+   - Choosing to Deploy via Github Pages.
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
-
+There are no differences between the deployed and development versions of the site, to my knowledge.
 
 ## Credits
 
