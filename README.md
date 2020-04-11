@@ -128,6 +128,10 @@ In addition, if it is not obvious, you should also describe how to run your code
     - https://pixabay.com/photos/dungeon-castle-fortress-ruin-2787899/
     - https://pixabay.com/photos/neuschwanstein-castle-bavaria-701732/
     - https://pixabay.com/photos/spring-tree-flowers-meadow-276014/
+    - https://pixabay.com/photos/iceland-northern-lights-aurora-2175944/
+    - https://www.wallpaperflare.com/search?wallpaper=elixir
+    - https://www.flickr.com/photos/71256895@N00/8361322191
+    - https://www.flickr.com/photos/quoteinspector/41296772825
 ### Acknowledgements
 
 - Wizards of the Coast for D&D for this whole thing in general.
